@@ -1,0 +1,40 @@
+body {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Pacifico', cursive !important;
+    color: white !important;
+}
+
+.borderOnly {
+    border: 2px dashed #ffffff; 
+    padding: 10px;
+    border-radius: 10px;    
+    background-color: transparent; 
+    box-shadow: none;      
+    overflow: hidden; 
+}
+
+.cardInfo {
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#projectHeader {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.github-link {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}

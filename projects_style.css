@@ -38,3 +38,41 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+.col {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers cards horizontally */
+    align-items: center; /* Centers cards vertically */
+    flex-wrap: wrap; /* Allows cards to wrap to the next row if necessary */
+    background-color: transparent;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+    margin: 20px;
+}
+
+.card img {
+    position: absolute;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    bottom: 235px;
+    left: 235px;
+}
+
+.card img.hidden {
+    display: none;
+}
+
+.card:hover img {
+    opacity: 1;
+}
+
+.card:hover {
+    background-color: rgba(255, 255, 255, 0.237) !important;
+}

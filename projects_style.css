@@ -2,8 +2,22 @@ body {
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Pacifico', cursive !important;
+    font-family: 'Uncage', sans-serif !important;
     color: white !important;
+}
+
+@font-face {
+    font-family: 'Uncage';
+    src: url('fonts/uncage-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uncage-Bold';
+    src: url(fonts/uncage-bold.otf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 .borderOnly {
@@ -17,12 +31,19 @@ body {
 
 .cardInfo {
     color: white !important;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Uncage', sans-serif !important;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+}
+
+.card-title {
+    font-size: 24px;
+    font-family: 'Uncage-Bold', sans-serif;
+    margin-bottom: 10px;
+    color: white !important;
 }
 
 #projectHeader {
@@ -39,11 +60,18 @@ body {
     font-weight: bold;
 }
 
+.hover-img {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
 .col {
-    display: flex; /* Enables Flexbox */
-    justify-content: center; /* Centers cards horizontally */
-    align-items: center; /* Centers cards vertically */
-    flex-wrap: wrap; /* Allows cards to wrap to the next row if necessary */
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    flex-wrap: wrap; 
     background-color: transparent;
 }
 
@@ -51,9 +79,10 @@ body {
     border: 1px solid #ccc;
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 380px;
+    height: 300px;
     position: relative;
-    margin: 20px;
+    margin: 10px;
 }
 
 .card img {
@@ -61,8 +90,10 @@ body {
     display: block;
     opacity: 0;
     transition: opacity 0.3s ease;
-    bottom: 235px;
-    left: 235px;
+    bottom: 275px;
+    left: 325px;
+    width: 64px;
+    height: 64px;
 }
 
 .card img.hidden {
@@ -75,4 +106,5 @@ body {
 
 .card:hover {
     background-color: rgba(255, 255, 255, 0.237) !important;
+    border: 2px solid #ffffff;
 }

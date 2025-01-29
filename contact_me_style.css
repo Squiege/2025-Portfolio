@@ -2,8 +2,22 @@ body {
     background-image: url("images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: 'Pacifico', cursive !important;
+    font-family: 'Uncage', sans-serif !important;
     color: white !important;
+}
+
+@font-face {
+    font-family: 'Uncage';
+    src: url('fonts/uncage-regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uncage-Bold';
+    src: url(fonts/uncage-bold.otf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
 #contactHeader {
